@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -e
+set -u
+set -x
+export DEBIAN_FRONTEND=noninteractive
+
+mkdir -p /etc/service
+install -m 755 -o root -g root -p /root/build/etc/init.wrapper/post-init.d/99-runsvdir /etc/init.wrapper/post-init.d/99-runsvdir

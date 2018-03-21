@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+source /etc/init.wrapper/config-lib.sh
+
+test -f /etc/rc.local || {
+	echo '#!/bin/sh' > /etc/rc.local
+	echo 'exit 0' >> /etc/rc.local
+	chmod 755 /etc/rc.local
+}
+
+sed -i -e "s@^exit 0@run-parts --exit-on-error /etc/init.wrapper/post-init.d@" /etc/rc.local ||
+	true
+
+dpkg-query -s etckeeper 1>/dev/null 2>/dev/null &&
+	etckeeper unclean &&
+		etckeeper commit "rc.local: run /etc/init.wrapper/post-init.d/*" 1>/dev/null 2>/dev/null
+
+true

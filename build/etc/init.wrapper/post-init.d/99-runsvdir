@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+# entry point is running:
+# - pre-init scripts
+# - executes dumb-init with rc.local
+# - which in turn runs post-init at the very end
+
+# ...and this very last job should never go to background:
+
+/usr/bin/runsvdir -P /etc/service
+
+# perhaps... there is a better way to exec it at end of rc.local? need test.
