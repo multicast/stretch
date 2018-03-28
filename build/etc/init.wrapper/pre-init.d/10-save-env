@@ -12,12 +12,8 @@ for v in \
   HOSTNAME \
   PATH \
   PWD \
-  ROOT_PASSWORD \
-  ROOT_SSH_KEY \
   SHLVL \
   TERM \
-  USER_PASSWORD \
-  USER_SSH_KEY \
 ;do
   sed -i -e "/^export ${v}=/d" /etc/profile.d/00docker-env.sh || true
   sed -i -e "/^declare -x ${v}=/d" /etc/profile.d/00docker-env.sh || true
