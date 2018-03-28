@@ -53,17 +53,3 @@ You can define environment variables via ``--env`` argument found in the followi
       * zero to higher numbers - to get more and more verbose
   * BASE_NOEXIT
       * set to 1 not to exit on startup errors
-  * ADMIN_ENABLED
-      * set to 1 to enable user ``admin``
-  * ADMIN_PASSWORD
-      * password for user ``admin``
-  * ADMIN_SSH_KEY_URI
-      * ssh public key uri. will be appended to ``~admin/.ssh/authorized_keys``
-  * ADMIN_SSH_KEY
-      * public ssh key as string. will be appended to ``~admin/.ssh/authorized_keys``
-  * ROOT_PASSWORD
-      * password for user root (if empty, difficult random password is generated)
-  * ROOT_SSH_KEY_URI
-      * ssh public key uri. will be appended to ``~root/.ssh/authorized_keys``
-  * ROOT_SSH_KEY
-      * public ssh key. will be appended to ``~root/.ssh/authorized_keys``
