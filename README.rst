@@ -1,13 +1,13 @@
-base-debian
-===========
+stretch
+=======
 
-.. |dockerbuild| image:: https://img.shields.io/docker/build/mkovac/base-debian.svg
-.. |dockerpulls| image:: https://img.shields.io/docker/pulls/mkovac/base-debian.svg
-.. |dockerstars| image:: https://img.shields.io/docker/stars/mkovac/base-debian.svg
+.. |dockerbuild| image:: https://img.shields.io/docker/build/mkovac/stretch.svg
+.. |dockerpulls| image:: https://img.shields.io/docker/pulls/mkovac/stretch.svg
+.. |dockerstars| image:: https://img.shields.io/docker/stars/mkovac/stretch.svg
 
 |dockerbuild| |dockerpulls| |dockerstars|
 
-The Debian Stretch container (`docker hub <https://hub.docker.com/r/mkovac/base-debian/>`_) enriched with few handy utilities, locales, ssh, cron, dumb-init and runit.
+The Debian Stretch container (`docker hub <https://hub.docker.com/r/mkovac/stretch/>`_) enriched with few handy utilities, locales, cron, dumb-init and runit.
 
 This work is a work from scratch, but is inspired by many
 approaches of the others I found clever, intuitive, and following
@@ -21,12 +21,12 @@ Quick Usage
 
 If you clone, run::
 
-    $ make latest && docker run --rm -ti mkovac/base-debian bash
+    $ make latest && docker run --rm -ti mkovac/stretch bash
 
 Since the image is to be used as base image, I suppose more common usage
 would be in the `Dockerfile` in the form:
 
-    FROM mkovac/base-debian:latest
+    FROM mkovac/stretch:latest
     ...
 
 
