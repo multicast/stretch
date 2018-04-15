@@ -1,0 +1,6 @@
+before_script:
+  - docker info
+
+docker_build:
+  script:
+  - docker build -t mkovac/stretch .
