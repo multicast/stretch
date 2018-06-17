@@ -57,7 +57,7 @@ ii  libexpat1:amd64            2.2.0-2+deb9u1                 amd64        XML p
 ii  libfdisk1:amd64            2.29.2-1+deb9u1                amd64        fdisk partitioning library
 ii  libffi6:amd64              3.2.1-6                        amd64        Foreign Function Interface library runtime
 ii  libgcc1:amd64              1:6.3.0-18+deb9u1              amd64        GCC support library
-ii  libgcrypt20:amd64          1.7.6-2+deb9u2                 amd64        LGPL Crypto library - runtime library
+ii  libgcrypt20:amd64          1.7.6-2+deb9u3                 amd64        LGPL Crypto library - runtime library
 ii  libgdbm3:amd64             1.8.3-14                       amd64        GNU dbm database routines (runtime version)
 ii  libgmp10:amd64             2:6.1.2+dfsg-1                 amd64        Multiprecision arithmetic library
 ii  libgnutls30:amd64          3.5.8-5+deb9u3                 amd64        GNU TLS library - main runtime library
