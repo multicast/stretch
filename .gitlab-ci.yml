@@ -3,4 +3,4 @@ before_script:
 
 docker_build:
   script:
-  - docker build --no-cache -t mkovac/stretch .
+  - echo docker build --no-cache -t mkovac/stretch:ci .
