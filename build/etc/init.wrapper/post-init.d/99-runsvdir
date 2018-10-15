@@ -7,6 +7,6 @@
 
 # ...and this very last job should never go to background:
 
-/usr/bin/runsvdir -P /etc/service
+nohup >/dev/null 2>&1 /usr/bin/runsvdir -P /etc/service &
 
 # perhaps... there is a better way to exec it at end of rc.local? need test.
